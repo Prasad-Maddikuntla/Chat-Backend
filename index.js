@@ -13,6 +13,8 @@ const host = process.env.HOST || '0.0.0.0';
 const port = process.env.PORT || 3001;
 
 
+
+
 app.use(cors({
   origin: [`http://localhost:3000`,`http://${host}:3000`,"http://115.99.19.93:3000"], // Allow requests from this origin
   methods: ["GET", "POST"],
